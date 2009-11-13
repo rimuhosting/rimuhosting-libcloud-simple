@@ -1,3 +1,14 @@
 These are sample scripts for using libcloud. Note they make contain RimuHosting specifics.
 
 Please DO NOT make API Keys public :)
+
+To use this, first install libcloud. (Note the rimuhosting fork may have a few patches in it not in the offical libcloud)
+
+git clone  git://github.com/rimuhosting/libcloud.git
+cd libcloud
+sudo python install
+Once libcloud is installed, get the script repository, and run the scripts.
+
+git clone git://github.com/rimuhosting/rimuhosting-libcloud-simple.git
+cd rimuhosting-libcloud-simple
+python list_images.py <apikey>
